@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_bmi_logo"
+            android:contentDescription="@string/home_logo_desc"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_blank_profile"
+            android:contentDescription="@string/home_logo_desc"
+            android:background="@drawable/circle_background"
+            android:layout_gravity="center_vertical"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="450dp"
+            android:src="@drawable/ic_man_body"
+            android:scaleType="fitCenter"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_gender_title"
+                style="@style/home_input_title"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/genderSelectionGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/black"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_gender_type_1"
+                        android:id="@+id/gender1"
+                        style="@style/home_radio_button_style"
+                        />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_gender_type_2"
+                        android:id="@+id/gender2"
+                        style="@style/home_radio_button_style"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_gender_type_3"
+                        android:id="@+id/gender3"
+                        style="@style/home_radio_button_style"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_age_title"
+                style="@style/home_input_title"
+                />
+
+            <EditText
+                android:id="@+id/age_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/home_age_input_hint"
+                style="@style/home_edittext_style"
+                android:autofillHints="0"
+                android:background="@drawable/home_edittext_background"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_height_title"
+                style="@style/home_input_title"
+                />
+
+            <EditText
+                android:id="@+id/height_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/home_height_input_hint"
+                style="@style/home_edittext_style"
+                android:autofillHints="0"
+                android:background="@drawable/home_edittext_background"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_weight_title"
+                style="@style/home_input_title"
+                />
+
+            <EditText
+                android:id="@+id/weight_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/home_weight_input_hint"
+                style="@style/home_edittext_style"
+                android:autofillHints="0"
+                android:background="@drawable/home_edittext_background"
+                android:padding="10dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/calculate_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home_calculate_btn"
+        style="@style/home_calculate_btn"
+        android:background="@drawable/home_calculate_btn"
+        />
+
+
+</LinearLayout>

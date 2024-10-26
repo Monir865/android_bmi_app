@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="home_edittext_style">
+        <item name="android:textSize">20sp</item>
+        <item name="android:ems">8</item>
+        <item name="android:autofillHints">0</item>
+        android:autofillHints="0"
+        android:inputType="number"
+    </style>
+</resources>

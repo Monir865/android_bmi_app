@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">PracticeProject</string>
+
+    <string name="home_logo_desc">BMI app logo</string>
+    <string name="home_gender_title">Gender</string>
+    <string name="home_gender_type_1">Male</string>
+    <string name="home_gender_type_2">Female</string>
+    <string name="home_gender_type_3">Custom</string>
+
+    <string name="home_age_title">Age</string>
+    <string name="home_age_input_hint">Enter Age (Year)</string>
+
+    <string name="home_height_title">Height</string>
+    <string name="home_height_input_hint">Enter Height (fit)</string>
+
+    <string name="home_weight_title">Weight</string>
+    <string name="home_weight_input_hint">Enter Weight (kg)</string>
+
+    <string name="home_calculate_btn">Calculate</string>
+
+</resources>
